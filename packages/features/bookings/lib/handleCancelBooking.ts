@@ -102,7 +102,6 @@ async function getBookingToDelete(id: number | undefined, uid: string | undefine
         },
       },
       uid: true,
-      id: true,
       eventTypeId: true,
       destinationCalendar: true,
       smsReminderNumber: true,
@@ -246,7 +245,6 @@ async function handler(req: CustomRequest) {
     },
     attendees: attendeesList,
     uid: bookingToDelete?.uid,
-    bookingId: bookingToDelete?.id,
     /* Include recurringEvent information only when cancelling all bookings */
     recurringEvent: allRemainingBookings
       ? parseRecurringEvent(bookingToDelete.eventType?.recurringEvent)

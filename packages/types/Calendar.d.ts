@@ -166,7 +166,6 @@ export interface CalendarEvent {
   conferenceData?: ConferenceData;
   additionalInformation?: AdditionalInformation;
   uid?: string | null;
-  bookingId?: number;
   videoCallData?: VideoCallData;
   paymentInfo?: PaymentInfo | null;
   requiresConfirmation?: boolean | null;
